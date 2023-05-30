@@ -1,5 +1,6 @@
 import time
 import presencify
+import psutil
 
 while running:
     url = presencify.Runtime.execute("window.location.href")

@@ -1,0 +1,8 @@
+{
+    "name": "Presencify",
+    "author": "manucabral",
+    "client_id": "1113134454945362081",
+    "description": "A simple presence for Discord",
+    "uses_browser": false,
+    "version": "1.0.0"
+}
