@@ -1,8 +1,0 @@
-{
-    "name": "Youtube",
-    "author": "Manu",
-    "client_id": "a client id",
-    "description": "This presence will show the video you are watching on Youtube.",
-    "uses_browser": true,
-    "version": "1.0.0"
-}
