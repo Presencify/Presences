@@ -9,13 +9,17 @@ Note this example updates every 2 seconds but the real presence updates every 15
 while running:
     media = runtime.mediaSession()
     url = runtime.url
+    
     if not "youtube.com" in url:
         continue
+        
     if media is None:
         continue
+        
     update_rpc(
-        details="Viewing a video",
-        state=media.title,
+        details=media.title,
+        state=media.artist,
         large_image=media.image,
     )
+    
     time.sleep(2)
