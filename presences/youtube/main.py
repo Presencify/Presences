@@ -1,25 +1,24 @@
 import time
 
-"""
-In this example, "runtime" is used to first retrieve the "mediaSession", which allows us to obtain information such as author, image, etc.
-Then, the URL is checked to see if it is from YouTube to continue updating the presence.
-Note this example updates every 2 seconds but the real presence updates every 15 seconds.
-"""
-
 while running:
-    media = runtime.mediaSession()
     url = runtime.url
-    
-    if not "youtube.com" in url:
+    if not "www.youtube.com" in url:
         continue
-        
-    if media is None:
+
+    media = runtime.mediaSession()
+    if not media:
         continue
-        
+
+    channel_url = runtime.execute("document.querySelector('#text > a').href")
+
     update_rpc(
-        details=media.title,
-        state=media.artist,
+        details=media.artist,
+        state=media.title,
         large_image=media.image,
+        buttons=[
+            {"label": "Play Video", "url": url},
+            {"label": "View Channel", "url": channel_url},
+        ],
     )
-    
-    time.sleep(2)
+
+    time.sleep(10)
