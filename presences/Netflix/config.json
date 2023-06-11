@@ -1,0 +1,8 @@
+{
+    "name": "Netflix",
+    "author": "manucabral",
+    "client_id": "1061718185721725129",
+    "description": "Shows what you're watching on Netflix",
+    "uses_browser": true,
+    "version": "0.0.1"
+}
