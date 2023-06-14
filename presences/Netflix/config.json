@@ -1,8 +1,19 @@
 {
     "name": "Netflix",
     "author": "manucabral",
+    "contributors": [],
     "client_id": "1061718185721725129",
     "description": "Shows what you're watching on Netflix",
     "uses_browser": true,
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "category": "entertainment",
+    "domains": [
+        "netflix.com"
+    ],
+    "tags": [
+        "netflix",
+        "movies",
+        "tv",
+        "shows"
+    ]
 }
