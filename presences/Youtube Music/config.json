@@ -1,0 +1,19 @@
+{
+    "name": "Youtube Music",
+    "author": "manucabral",
+    "contributors": [],
+    "client_id": "828083725790609459",
+    "description": "Shows what you're listening to on Youtube Music",
+    "uses_browser": true,
+    "version": "0.0.1",
+    "category": "music",
+    "domains": [
+        "music.youtube.com"
+    ],
+    "tags": [
+        "music",
+        "audio",
+        "youtube",
+        "youtube music"
+    ]
+}
