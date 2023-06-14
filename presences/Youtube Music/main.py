@@ -1,9 +1,6 @@
 import time
 
-
-def next():
-    time.sleep(10)
-
+check_time = 12
 
 while running:
     tab = None
@@ -20,7 +17,7 @@ while running:
     if tab is None:
         # No YouTube Music tabs open
         print("No tab found")
-        next()
+        time.sleep(check_time)
         continue
 
     media = tab.media_session()
@@ -36,7 +33,7 @@ while running:
                 },
             ],
         )
-        next()
+        time.sleep(check_time)
         continue
 
     # selector to get the artist url
@@ -61,4 +58,4 @@ while running:
             },
         ],
     )
-    next()
+    time.sleep(check_time)
