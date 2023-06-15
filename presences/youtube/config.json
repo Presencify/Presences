@@ -1,8 +1,19 @@
 {
     "name": "Youtube",
     "author": "manucabral",
+    "contributors": [],
     "client_id": "1113646725408772176",
-    "description": "Shows what you are watching on youtube",
+    "description": "Shows the current playing video on Youtube",
     "uses_browser": true,
-    "version": "1.0.0"
+    "version": "0.0.2",
+    "category": "entertainment",
+    "domains": [
+        "youtube.com"
+    ],
+    "tags": [
+        "youtube",
+        "video",
+        "music",
+        "entertainment"
+    ]
 }
