@@ -63,6 +63,13 @@ while running:
     video_type, video_title, video_image = video_metadata.split("#")
     is_paused = tab.execute("document.querySelector('video').paused")
 
+    if len(video_image) > 128:
+        print("[Netflix] Video image is too large, skipping")
+        video_image = netflix_logo
+
+    if len(video_title) > 128:
+        video_title = video_title[:125] + "..."
+
     # If watching a show
     if video_type == "show":
         tab.execute(showmetadata_func)
